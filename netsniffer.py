@@ -4,6 +4,15 @@ import binascii
 import psutil
 from colorama import Fore, Style
 
+def banner():
+    print('''\033[92m\033[1m
+
+
+                   >>> netsniffer\033[0m'''+'''\033[90m@rvizx9\033[0m
+
+
+    ''')
+
 def print_network_interfaces():
     interfaces = psutil.net_if_addrs()
     for interface, addresses in interfaces.items():
@@ -47,6 +56,7 @@ def main():
          # to output data in hex
         #hex_data = binascii.hexlify(data)
         #print(Fore.GREEN + "Data: "+ Fore.WHITE , hex_data, "\n"+"\033[2m"+"______"*20+"\033[0m")
-        
+
+banner()
 print_network_interfaces()
 main()
