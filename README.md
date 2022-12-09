@@ -1,5 +1,6 @@
 # netsniffer
 simple network sniffer using python for windows
+![alt text](https://github.com/rvizx/netsniffer/blob/main/image.png?raw=true)
 
 ## usage
 
